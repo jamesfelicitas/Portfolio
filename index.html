@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- ADD THIS LINE: Devicon Library -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -61,15 +64,37 @@
         </div>
     </section>
 
-     <!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="skills" class="py-5 bg-black text-white">
         <div class="container py-5">
-            <h2 class="mb-5 text-uppercase" style="letter-spacing: 2px;">My Arsenal</h2>
-            <div class="row">
-                <div class="col-md-3 col-6 mb-4"><h3 class="skill-item">HTML5</h3></div>
-                <div class="col-md-3 col-6 mb-4"><h3 class="skill-item">CSS3</h3></div>
-                <div class="col-md-3 col-6 mb-4"><h3 class="skill-item">Bootstrap</h3></div>
-                <div class="col-md-3 col-6 mb-4"><h3 class="skill-item">JavaScript</h3></div>
+            <h2 class="mb-5 text-uppercase text-center" style="letter-spacing: 2px;">Technical Skills</h2>
+            
+            <div class="row text-center align-items-center">
+                
+                <!-- Skill 1: Excel -->
+                <div class="col-md-3 col-6 mb-5">
+                    <img src="assets/img/excel.png" alt="Excel" class="img-fluid mb-3 skill-icon" style="max-height: 80px;">
+                    <h4 class="font-weight-light">Excel</h4>
+                </div>
+
+                <!-- Skill 2: Git -->
+                <div class="col-md-3 col-6 mb-5">
+                    <img src="assets/img/git.png" alt="Git" class="img-fluid mb-3 skill-icon" style="max-height: 80px;">
+                    <h4 class="font-weight-light">Git</h4>
+                </div>
+
+                <!-- Skill 3: GitHub -->
+                <div class="col-md-3 col-6 mb-5">
+                    <img src="assets/img/github.png" alt="GitHub" class="img-fluid mb-3 skill-icon bg-white rounded-circle p-1" style="max-height: 80px;">
+                    <h4 class="font-weight-light">GitHub</h4>
+                </div>
+
+                <!-- Skill 4: SQL -->
+                <div class="col-md-3 col-6 mb-5">
+                    <img src="assets/img/sql.png" alt="SQL" class="img-fluid mb-3 skill-icon" style="max-height: 80px;">
+                    <h4 class="font-weight-light">SQL</h4>
+                </div>
+
             </div>
         </div>
     </section>
@@ -79,22 +104,32 @@
         <div class="container">
             <h2 class="mb-5 text-uppercase">Selected Work</h2>
             <div class="row">
-                <!-- Project 1 -->
+                
+                <!-- Project 1: Alumni Tracer -->
                 <div class="col-md-6 mb-5">
                     <div class="project-card p-4 border border-dark">
-                        <h3>Project One</h3>
-                        <p class="text-muted">Alumni Tracer and Profiling.</p>
-                        <a href="#" class="text-dark font-weight-bold">View Source &rarr;</a>
+                        <h3>Alumni Tracer</h3>
+                        <p class="text-muted">A profiling system for university graduates.</p>
+                        
+                        <a href="https://alumnitracers.vercel.app/" target="_blank" class="text-dark font-weight-bold stretched-link">
+                            View on GitHub &rarr;
+                        </a>
                     </div>
                 </div>
-                <!-- Project 2 -->
+
+                <!-- Project 2:  -->
                 <div class="col-md-6 mb-5">
                     <div class="project-card p-4 border border-dark">
-                        <h3>Project Two</h3>
-                        <p class="text-muted">A weather dashboard app.</p>
-                        <a href="#" class="text-dark font-weight-bold">View Source &rarr;</a>
+                        <h3>Social Media Web App</h3>
+                        <p class="text-muted">Real-time weather data visualization.</p>
+                        
+                        <!-- UPDATE THE HREF BELOW with your real link -->
+                        <a href="https://jamesfelicitas.github.io/it35-lab/" target="_blank" class="text-dark font-weight-bold stretched-link">
+                            View on GitHub &rarr;
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
