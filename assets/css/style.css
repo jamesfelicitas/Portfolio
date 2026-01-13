@@ -77,3 +77,8 @@ footer h2 {
 footer {
     padding-bottom: 80px; 
 }
+
+::selection {
+    background: var(--accent-black);
+    color: #fff;
+}
