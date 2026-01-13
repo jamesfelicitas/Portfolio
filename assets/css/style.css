@@ -176,7 +176,6 @@ footer {
     background: #fff;
 }
 
-/* Custom Scrollbar (Chrome/Edge/Safari) */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -188,5 +187,13 @@ footer {
 ::-webkit-scrollbar-thumb {
     background-color: var(--accent-black); 
     border-radius: 6px;
-    border: 3px solid #ffffff; /* Adds white padding around the handle */
+    border: 3px solid #ffffff; 
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #000; /* Black Border */
+    outline: 0;
+    box-shadow: none; /* Removes the blue glow */
 }
