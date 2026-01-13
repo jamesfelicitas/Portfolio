@@ -82,3 +82,25 @@ footer {
     background: var(--accent-black);
     color: #fff;
 }
+
+#hero a.text-dark {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#hero a.text-dark:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+#hero a.text-dark {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#hero a.text-dark:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
