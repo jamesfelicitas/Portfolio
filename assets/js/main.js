@@ -17,3 +17,27 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     });
 */
+
+/* ...existing code... */
+
+// 3. Simple Scroll Reveal Animation
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // Trigger when 10% of the element is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Only animate once
+        }
+    });
+}, observerOptions);
+
+const animatedElements = document.querySelectorAll('section, .project-card, .skill-icon');
+animatedElements.forEach(el => {
+    el.classList.add('fade-in-section'); // Add base class
+    observer.observe(el);
+});
