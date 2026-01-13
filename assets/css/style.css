@@ -65,3 +65,12 @@ body {
     transform: translateY(-5px);
     box-shadow: 10px 10px 0px 0px rgba(0,0,0,1); 
 }
+
+footer h2 {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+footer {
+    padding-bottom: 80px; 
+}
