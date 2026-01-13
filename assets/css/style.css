@@ -24,3 +24,20 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+
+#hero {
+    min-height: 90vh; 
+}
+
+.btn-black {
+    background-color: var(--accent-black);
+    color: #fff;
+    border: 1px solid var(--accent-black);
+    padding: 15px 40px;
+    transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+    background-color: transparent;
+    color: var(--accent-black);
+}
