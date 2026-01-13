@@ -55,3 +55,13 @@ body {
     color: #fff;
     cursor: default;
 }
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1); 
+}
