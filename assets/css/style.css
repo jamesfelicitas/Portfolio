@@ -247,3 +247,7 @@ body.dark-mode .form-control {
     color: #fff;
     border-color: #555;
 }
+
+section {
+    scroll-margin-top: 80px; 
+}

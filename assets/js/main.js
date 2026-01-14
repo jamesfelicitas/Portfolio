@@ -42,19 +42,27 @@ animatedElements.forEach(el => {
     observer.observe(el);
 });
 
-// 4. Dark Mode Toggle
+// 4. Dark Mode Toggle with Local Storage Support
 const toggleButton = document.getElementById('darkModeToggle');
 const body = document.body;
+
+// Check for saved user preference on page load
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    if (toggleButton) toggleButton.textContent = '☀️';
+}
 
 if (toggleButton) {
     toggleButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         
-        // Switch icon between Moon 🌙 and Sun ☀️
+        // Switch icon and save preference
         if (body.classList.contains('dark-mode')) {
             toggleButton.textContent = '☀️';
+            localStorage.setItem('theme', 'dark');
         } else {
             toggleButton.textContent = '🌙';
+            localStorage.setItem('theme', 'light');
         }
     });
 }
