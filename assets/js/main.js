@@ -41,3 +41,20 @@ animatedElements.forEach(el => {
     el.classList.add('fade-in-section'); // Add base class
     observer.observe(el);
 });
+
+// 4. Dark Mode Toggle
+const toggleButton = document.getElementById('darkModeToggle');
+const body = document.body;
+
+if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // Switch icon between Moon 🌙 and Sun ☀️
+        if (body.classList.contains('dark-mode')) {
+            toggleButton.textContent = '☀️';
+        } else {
+            toggleButton.textContent = '🌙';
+        }
+    });
+}

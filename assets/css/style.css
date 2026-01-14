@@ -208,3 +208,42 @@ footer {
     opacity: 1;
     transform: none;
 }
+
+/* Dark Mode Overrides */
+body.dark-mode, 
+body.dark-mode .bg-light, 
+body.dark-mode .bg-white {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .text-dark {
+    color: #ffffff !important;
+}
+
+body.dark-mode .text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Adjust cards and footer borders/backgrounds */
+body.dark-mode .project-card {
+    border-color: #555 !important;
+    background-color: #1e1e1e;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e !important;
+    border-top-color: #333 !important;
+}
+
+/* Invert specific buttons */
+body.dark-mode .btn-black {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode .form-control {
+    background-color: #2b2b2b;
+    color: #fff;
+    border-color: #555;
+}
